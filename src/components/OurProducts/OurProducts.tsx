@@ -7,7 +7,7 @@ export default async function OurProducts() {
   const products: Product[] = await api.get("products")
 
   return (
-    <div className='mx-auto max-w-7xl px-4 py-16 sm:py-24 flex flex-col gap-4'>
+    <div className='px-4 py-16 sm:py-24 flex flex-col gap-4'>
       <h2 className='font-bold tracking-tight text-black text-2xl md:text-4xl'>
         Our Products
       </h2>

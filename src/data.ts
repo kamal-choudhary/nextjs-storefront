@@ -1,5 +1,8 @@
 import { Product } from "./interfaces"
 
+const descriptionText =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
 export const products: Product[] = [
   {
     id: "1",
@@ -7,7 +10,8 @@ export const products: Product[] = [
     price: 48,
     imageSrc: "/earthen-bottle.jpg",
     imageAlt: "Earthen Bottle Alt",
-    slug: "earthen-bottle"
+    slug: "earthen-bottle",
+    description: descriptionText
   },
   {
     id: "2",
@@ -15,7 +19,8 @@ export const products: Product[] = [
     price: 35,
     imageSrc: "/nomad-tumbler.jpg",
     imageAlt: "Nomad Tumbler Alt",
-    slug: "nomad-tumbler"
+    slug: "nomad-tumbler",
+    description: descriptionText
   },
   {
     id: "3",
@@ -23,7 +28,8 @@ export const products: Product[] = [
     price: 89,
     imageSrc: "/focus-paper-refill.jpg",
     imageAlt: "Focus Paper Refill Alt",
-    slug: "focus-paper-refill"
+    slug: "focus-paper-refill",
+    description: descriptionText
   },
   {
     id: "4",
@@ -31,7 +37,8 @@ export const products: Product[] = [
     price: 35,
     imageSrc: "/machined-mechanical-pencil.jpg",
     imageAlt: "Machined Mechanical Pencil Alt",
-    slug: "machined-mechanical-pencil"
+    slug: "machined-mechanical-pencil",
+    description: descriptionText
   },
   {
     id: "5",
@@ -39,7 +46,8 @@ export const products: Product[] = [
     price: 64,
     imageSrc: "/focus-card-tray.jpg",
     imageAlt: "Focus Card Tray Alt",
-    slug: "focus-card-tray"
+    slug: "focus-card-tray",
+    description: descriptionText
   },
   {
     id: "6",
@@ -47,7 +55,8 @@ export const products: Product[] = [
     price: 39,
     imageSrc: "/focus-multi-pack.jpg",
     imageAlt: "Focus Multi Pack Alt",
-    slug: "focus-multi-pack"
+    slug: "focus-multi-pack",
+    description: descriptionText
   },
   {
     id: "7",
@@ -55,7 +64,8 @@ export const products: Product[] = [
     price: 50,
     imageSrc: "/brass-scissors.jpg",
     imageAlt: "Brass Scissors Alt",
-    slug: "brass-scissors"
+    slug: "brass-scissors",
+    description: descriptionText
   },
   {
     id: "8",
@@ -63,6 +73,7 @@ export const products: Product[] = [
     price: 32,
     imageSrc: "/focus-carry-pouch.jpg",
     imageAlt: "Focus Carry Pouch Alt",
-    slug: "focus-carry-pouch"
+    slug: "focus-carry-pouch",
+    description: descriptionText
   }
 ]

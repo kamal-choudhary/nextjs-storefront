@@ -13,10 +13,11 @@ export interface Navigation {
 }
 
 const navigation: Navigation[] = [
-  { id: "1", title: "Women", href: "#" },
-  { id: "2", title: "Men", href: "#" },
-  { id: "3", title: "Company", href: "#" },
-  { id: "4", title: "Store", href: "#" }
+  { id: "1", title: "Productivity", href: "#" },
+  { id: "2", title: "Workspace", href: "#" },
+  { id: "3", title: "Accessories", href: "#" },
+  { id: "4", title: "Office", href: "#" },
+  { id: "5", title: "Journals", href: "#" }
 ]
 
 export default function Header() {

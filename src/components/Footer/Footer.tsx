@@ -1,11 +1,13 @@
+import MaxWidthWrapper from "../MaxWidthWrapper"
+
 export default function Footer() {
   return (
-    <footer className='border-t border-gray-200 bg-gray-50'>
-      <div className='mx-auto max-w-7xl'>
-        <p className='text-sm text-center text-gray-500 py-6'>
+    <footer className='border-t border-gray-200 bg-gray-50 mt-auto'>
+      <MaxWidthWrapper>
+        <p className='text-sm text-center text-gray-500 py-6 px-4'>
           Copyright &copy; 2015-2025 Vercel Store.
         </p>
-      </div>
+      </MaxWidthWrapper>
     </footer>
   )
 }

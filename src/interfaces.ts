@@ -5,4 +5,5 @@ export interface Product {
   imageSrc: string
   imageAlt: string
   slug: string
+  description: string
 }
