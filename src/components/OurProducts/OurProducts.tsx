@@ -1,11 +1,10 @@
-import { Product } from "@/interfaces"
 import Image from "next/image"
 
-export default async function OurProducts() {
-  const baseUrl = process.env.BASE_URL || "http://localhost:3000"
+import { Product } from "@/interfaces"
+import { api } from "@/lib/api"
 
-  const data = await fetch(new URL("/api/products", baseUrl))
-  const products: Product[] = await data.json()
+export default async function OurProducts() {
+  const products: Product[] = await api.get("products")
 
   return (
     <div className='mx-auto max-w-7xl px-4 py-16 sm:py-24 flex flex-col gap-4'>
@@ -15,7 +14,11 @@ export default async function OurProducts() {
 
       <div className='grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8'>
         {products.map((product) => (
-          <a key={product.id} href={product.slug} className='group'>
+          <a
+            key={product.id}
+            href={`/product/${product.slug}`}
+            className='group'
+          >
             <Image
               src={product.imageSrc}
               width={356}
