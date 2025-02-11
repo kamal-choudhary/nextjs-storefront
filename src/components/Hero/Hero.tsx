@@ -3,17 +3,18 @@ import Image from "next/image"
 export default function Hero() {
   return (
     <div className='mx-auto max-w-7xl'>
-      <div className='relative h-[50vh]'>
-        <div className='z-[-1]'>
-          <Image
-            priority
-            src='https://maildroppa.com/assets/svg/home-desktop-bg.svg'
-            layout='fill'
-            objectFit='cover'
-            objectPosition='center'
-            alt=''
-          />
-        </div>
+      <div className='relative h-[75vh] sm:h-[50vh] w-full'>
+        <Image
+          priority
+          src='https://maildroppa.com/assets/svg/home-desktop-bg.svg'
+          fill
+          style={{
+            objectFit: "cover",
+            objectPosition: "center",
+            zIndex: "0"
+          }}
+          alt='Hero Image'
+        />
         <div className='relative mx-auto flex flex-col items-center justify-center gap-4 h-full md:max-w-[80%]'>
           <h1 className='text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl'>
             Vercel Store

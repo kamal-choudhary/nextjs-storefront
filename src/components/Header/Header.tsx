@@ -39,6 +39,7 @@ export default function Header() {
                 alt='Vercel logo'
                 width={40}
                 height={34}
+                style={{ width: 40, height: 34 }}
                 priority
               />
             </Link>
