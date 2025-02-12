@@ -20,7 +20,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 ## Inspiration
 
-I took inspiration inspiration/help from the following sources:
+I took inspiration/help from the following sources:
 
 - [https://maildroppa.com](https://maildroppa.com) - Hero background image
 - [https://github.com/vercel/next.js/tree/canary/examples/route-handlers](https://github.com/vercel/next.js/tree/canary/examples/route-handlers)
